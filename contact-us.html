@@ -63,6 +63,9 @@
                 <div class="col-md-4 mb-3">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name"  required>
+                    <div class="invalid-feedback">
+                        Please enter your Name.
+                    </div>
                     <!-- <div class="valid-feedback">
                         Looks good!
                     </div> -->
@@ -73,13 +76,16 @@
                        
                         <input type="email"  class="form-control" id="email" aria-describedby="inputGroupPrepend" required>
                         <div class="invalid-feedback">
-                            Please choose a username.
+                            Please enter a valid username.
                         </div>
                  
                 </div>
                 <div class="col-md-4 mb-3">
                     <label for="phone_no">Phone No.</label></label>
-                    <input type="text" class="form-control" id="phone_no"  required>
+                    <input type="text" class="form-control" id="phone_no" pattern="(\+\d{1,2})?\d{10}" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid Phone Number.
+                    </div>
                     <!-- <div class="valid-feedback">
                         Looks good!
                     </div> -->
