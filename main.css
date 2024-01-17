@@ -100,7 +100,9 @@ a .active {
 
 
 /* index */
-
+.Msection{
+margin-top: 100px;
+}
 
 .top_content p{
     text-align: left;
@@ -115,6 +117,10 @@ a .active {
     .top_content p{
         font-size: 44px; /* Adjust the font size for smaller screens */
     }
+
+    .Msection{
+        margin-top: 50px;
+        }
 }
 
 @media (max-width: 425px) {
@@ -122,6 +128,9 @@ a .active {
         font-size: 32px; /* Adjust the font size for smaller screens */
         line-height: 40px;
     }
+    .Msection{
+        margin-top:20px;
+        }
 }
 
 .top_content button{
@@ -150,17 +159,21 @@ a .active {
    
 }
 
+
+
 .ride_card{
     padding-top:13vw;
 }
 
 .card1 .card {
     border-color: blue;
-    border-radius: 17px;
+    border-radius: 17px; 
     width:20rem;
     background-color: #0137DD;
-    margin-left: 12px;
+    margin-right:20px;
   }
+
+ 
 
   @media (max-width:768px) {
     .card1 .card {
