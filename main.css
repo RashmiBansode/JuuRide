@@ -160,10 +160,44 @@ margin-top: 100px;
 }
 
 
-
 .ride_card{
     padding-top:13vw;
 }
+
+/* new */
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    border-radius: 0;
+  }
+  .carousel-inner {
+    padding: 1em;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #3e16f0;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @media (min-width: 768px) {
+    .card img {
+      height: 11em;
+    }
+  }
+
 
 .card1 .card {
     border-color: blue;
@@ -180,36 +214,52 @@ margin-top: 100px;
       width:230px;
     }
 }
-  .card1 .card p{
-    font-size: 17px;
+
+.card1 h4{
+    font-size: 22px;
+  }
+  .card1  p{
+    font-size: 18px;
   }
   .card-body {
     height: 250px; /* Set your desired fixed height */
     overflow: auto; /* Add overflow for cases where content might exceed the fixed height */
 }
 
-.drive-value h1{
-    font-size: 47px;
+.drive-value h2{
+    font-size: 40px;
     font-weight:600;
 }
 
 .drive-value p{
     font-size: 28px;
     font-weight:500;
-    color: rgb(62, 62, 62);
+    color: #87888e
 }
 
 @media (max-width: 425px) {
-   .drive-value h1{
-        font-size: 28px;
+   .drive-value h2{
+        font-size: 24px;
    }
    .drive-value p{
-    font-size: 20px;
+    font-size: 18px;
    }
+   .card1 h4{
+    font-size: 18px;
+  }
+  .card1  p{
+    font-size: 16px;
+  }
+   .card1 h4{
+    font-size: 18px;
+  }
+  .card1  p{
+    font-size: 16px;
+  }
 }
 .dval-img img{
     
-    width: 600px;
+    width: 450px;
 }
 
 .data{
@@ -394,22 +444,34 @@ margin: auto;
     margin-bottom: 150px;
 }
 
+.service-con{
+    margin-right:50px ;
+    
+}
+
 .service-con h1{
-    font-size: 47px;
-    font-weight:700;
+    font-size: 30px;
+    font-weight:600;
 }
 
 .service-con h3{
     /* font-size: 47px; */
     font-weight:600;
-    color: #333;
+    color: #83858d
     
+}
+.ready h2{
+    font-size:30px ;
+}
+.ready p{
+    font-size:22px ;
+    color: #87888e;
 }
 
 .service-con p{
     font-size: 22px;
     font-weight:500;
-    color: rgb(62, 62, 62);
+    color: #9B9FAD
 }
 
 @media (max-width: 425px) {
@@ -418,6 +480,12 @@ margin: auto;
         font-weight:700;
         margin-top: 10px;
     }
+    .ready h2{
+        font-size:24px ;
+    }
+    .ready p{
+        font-size:16px ;
+    }
     
     .service-con h3{
         font-size: 20px;
@@ -425,6 +493,14 @@ margin: auto;
         color: #333;
         
     }
+
+
+
+    .service-con{
+        margin-right:0px ;
+        
+    }
+    
     
     .service-con p{
         font-size: 15px;
