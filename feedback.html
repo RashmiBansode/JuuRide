@@ -5,11 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="feedback.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <title>Document</title>
     <title>Feedback Form</title>
     <style>
@@ -33,7 +31,8 @@
             max-width: 600px; 
             position: relative;
         } */
-.nav{
+
+.navbar{
     background-color:#0137DD;
 }
         .close-button {
@@ -44,8 +43,10 @@
   </head>
 
   <body>
+
+    <i class="fa fa-star-o" aria-hidden="true"></i><i class="fa fa-home" aria-hidden="true"></i>
     <nav
-      class="navbar navbar-expand-lg bg-primary shadow-sm p-3 mb-5 rounded sticky-top"
+      class="navbar navbar-expand-lg  shadow-sm p-3 mb-5 rounded sticky-top"
     >
       <div class="container-fluid px-5">
         <h2 class="text-light">JUU Ride Feedback Form</h2>
@@ -58,19 +59,100 @@
         </div>
       </div>
     </nav>
-<div class="feedback-form">
-    
-    <h2>Feedback Form</h2>
-    <!-- Your form elements go here -->
-    <form>
-        <label for="feedback">Feedback:</label>
-        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
-        
-        <!-- Add more form fields as needed -->
+  
 
-        <button type="submit">Submit Feedback</button>
-    </form>
+
+
+<form class="mx-4">
+  <div class="about">
+    <img
+      src="assets/images/feedback.png"
+      class="img-fluid rounded float-end"
+      alt="..."
+    />
+
+   
+   
+    <div class="col-md-4 mb-3">
+      <label for="inputName" class="form-label">Name</label><i class="fa-regular fa-star"></i>
+
+      <input type="text" class="form-control" id="inputName" placeholder="">
+    </div>
+
+
+    <div class="col-md-4 mb-3">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    
+    <div class="col-md-4 mb-3">
+    <label for="inputEmail4" class="form-label">1. How would you rate your overall JUU Ride experience?</label>
+    
+    <div class="custom-control custom-radio">
+      <input type="radio" id="star5" name="feedback" value="5" class="custom-control-input">
+      <label class="custom-control-label" for="star5">5 Star<i class="fa fa-star-o" aria-hidden="true"></i><i class="fa-regular fa-star"></i>
+      </label>
+    </div>
+  
+
+    <div class="custom-control custom-radio">
+      <input type="radio" id="star4" name="feedback" value="4" class="custom-control-input">
+      <label class="custom-control-label" for="star4">4 Star</label>
+    </div>
+
+    <div class="custom-control custom-radio">
+      <input type="radio" id="star3" name="feedback" value="3" class="custom-control-input">
+      <label class="custom-control-label" for="star3">3 Star</label>
+    </div> 
+    <div class="custom-control custom-radio">
+      <input type="radio" id="star2" name="feedback" value="2" class="custom-control-input">
+      <label class="custom-control-label" for="star2">2 Star</label>
+    </div> 
+    <div class="custom-control custom-radio">
+      <input type="radio" id="star1" name="feedback" value="1" class="custom-control-input">
+      <label class="custom-control-label" for="star1">1 Star</label>
+    </div> 
+  </div>
+
+  <div class="mb-2 col-md-8 mb-3">
+    <label for="validationTextarea" class="form-label">2. Comments and Suggestions</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" ></textarea>
+  </div>          
+    
+  <div class="mb-2 col-md-8 mb-3">
+    <label for="validationTextarea" class="form-label">3. Did your driver provide exceptional service? If yes, please share details:</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" ></textarea>
+  </div>    
+  <div class="mb-2 col-md-8 mb-3">
+    <label for="validationTextarea" class="form-label">4. Did you encounter any issues during your ride? If yes, please describe</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" ></textarea>
+  </div>    
+  <div class="mb-2 col-md-8 mb-3">
+    <label for="validationTextarea" class="form-label">5. Are there any specific features you’d like to see on JUU Ride in the future?</label>
+    <textarea class="form-control" id="validationTextarea" placeholder="" ></textarea>
+  </div>    
+    
+  <label class="form-check-label mb-2" for="exampleCheck1">6. Would you like a member of our support team to follow up with you regarding your feedback?</label>
+  <div class="mb-1 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Yes</label>
+  </div>
+  <div class="mb-4 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">No</label>
+  </div>
+
+<label class="mb-4">Thank you for taking the time to provide your valuable feedback. <br> Your input helps us enhance the JUU Ride experience for you and others.</label><br>
+
+<button class="btn btn-warning rounded-pill btn1 m-2">
+  <a
+    href=""
+    style="text-decoration: none; color: inherit"
+  >
+    Submit
+  </a></button>
 </div>
+
 
 <script>
     function closeForm() {

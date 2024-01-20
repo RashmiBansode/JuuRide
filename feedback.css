@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* about_us */
+
+
+.about img{
+    width:620px ;
+    margin:50px 50px 30px 20px ;
+  }
+
+/* .about label{
+    background: linear-gradient(to right, #F2B90F,#F27405); 
+    color:white ;
+    width: 180px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    height: 40px;
+    line-height: 40px;
+} */
+
+label{
+    font-size: 19px;
+    font-weight: 600;
+}
+
+
+.about-foot{
+max-width: 800px;
+padding-top:10vw;
+margin: auto;
+
+}
+.btn1{
+    background: linear-gradient(to right, #F2B90F,#F27405); 
+    color:white !important;
+    width: 180px;
+}
+
+@media (max-width: 425px) {
+
+
+    label{
+       
+        font-size: 16px;
+       
+    }
+ }
+.img{
+    margin: auto;
+}
+ 
+
+/* contact_us */
+
